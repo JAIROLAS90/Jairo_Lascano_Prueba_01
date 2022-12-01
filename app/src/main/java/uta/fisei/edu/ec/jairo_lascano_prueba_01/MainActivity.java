@@ -2,7 +2,9 @@ package uta.fisei.edu.ec.jairo_lascano_prueba_01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        buttonMostrarResultado = findViewById(R.id.buttonResul);
+        buttonMostrarResultado = findViewById(R.id.buttuonCerrar);
         buttonSiguiente = findViewById(R.id.buttonSiguiente);
         editTextNombres = findViewById(R.id.editTextTextNombres);
         editTextApellidos = findViewById(R.id.editTextApellidos);
@@ -31,5 +33,19 @@ public class MainActivity extends AppCompatActivity {
         editTextNumInvertido = findViewById(R.id.editTextNumero);
         editTextResiduo = findViewById(R.id.editTextResiduo);
 
+
+
+
     }
+
+    public void  Siguiente (View view){
+
+        Intent sigBTN = new Intent (this, MainActivity2.class);
+
+        startActivity(sigBTN);
+
+        finish();
+
+    }
+
 }

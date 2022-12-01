@@ -103,7 +103,7 @@
         android:text="@string/btn_siguiente" />
 
     <Button
-        android:id="@+id/buttonResul"
+        android:id="@+id/buttuonCerrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:enabled="false"

@@ -96,7 +96,7 @@
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
-        android:id="@+id/buttonResul"
+        android:id="@+id/buttuonCerrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnCer" />
