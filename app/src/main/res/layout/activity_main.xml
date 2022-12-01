@@ -121,7 +121,7 @@
         android:text="@string/text_Residuo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/editTextResiduo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
