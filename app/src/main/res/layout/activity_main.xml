@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_Nombres"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_Apellidos"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -53,6 +55,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_Dividendo"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -70,6 +73,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_divisor"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -87,6 +91,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_num"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -102,11 +107,12 @@
         android:id="@+id/editTextParteEntera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_entero"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:autofillHints="" />
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/textViewResiduo"
@@ -120,6 +126,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/edit_res"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -132,9 +139,10 @@
         android:text="@string/btn_siguiente" />
 
     <Button
-        android:id="@+id/buttonCerrar"
+        android:id="@+id/buttonResul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="@string/btn_res" />
 
 </LinearLayout>

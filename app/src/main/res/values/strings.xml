@@ -16,4 +16,6 @@
     <string name="text_Residuo">Residuo</string>
     <string name="edit_entero">Entero</string>
     <string name="edit_res">Residuo</string>
+    <string name="edit_num_nor">Numero</string>
+    <string name="btnCer">CERRAR</string>
 </resources>
