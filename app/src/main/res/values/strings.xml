@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Jairo_Lascano_Prueba_01</string>
+    <string name="Nombre_text">Nombres</string>
+    <string name="Apellidos_text">Apellidos</string>
+    <string name="Dividendo_Text">Dividendo</string>
+    <string name="Divisor_Text">Divisor</string>
+    <string name="Numero_Text">Numero</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_res">Mostrar Resultados</string>
+    <string name="edit_Nombres">Nombres</string>
+    <string name="edit_Apellidos">Apellidos</string>
+    <string name="edit_Dividendo">Dividendo</string>
+    <string name="edit_divisor">Divisor</string>
+    <string name="edit_num">Numero Invertido</string>
+    <string name="text_Entero">Parte entera</string>
+    <string name="text_Residuo">Residuo</string>
+    <string name="edit_entero">Entero</string>
+    <string name="edit_res">Residuo</string>
 </resources>
