@@ -93,7 +93,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_num"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575" />
 
@@ -111,7 +111,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_entero"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp" />
 
     <TextView
@@ -128,7 +128,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_res"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 

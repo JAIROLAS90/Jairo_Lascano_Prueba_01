@@ -56,7 +56,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/edit_Dividendo"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -73,7 +73,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/edit_divisor"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -90,7 +90,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/edit_num_nor"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         tools:ignore="DuplicateSpeakableTextCheck" />

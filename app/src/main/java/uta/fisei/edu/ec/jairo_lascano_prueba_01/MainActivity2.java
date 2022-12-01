@@ -2,7 +2,9 @@ package uta.fisei.edu.ec.jairo_lascano_prueba_01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -29,6 +31,16 @@ public class MainActivity2 extends AppCompatActivity {
         editTextDividendo = findViewById(R.id.editTextDividendo);
         editTextDivisor = findViewById(R.id.editTextDivisor);
         editTextNumero = findViewById(R.id.editTextNumero);
+
+    }
+
+    public void  Siguiente (View view){
+
+        Intent sigBTN = new Intent (this, MainActivity3.class);
+
+        startActivity(sigBTN);
+
+        finish();
 
     }
 }

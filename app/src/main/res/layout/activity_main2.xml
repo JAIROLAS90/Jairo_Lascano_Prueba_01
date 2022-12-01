@@ -55,7 +55,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_Dividendo"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -73,7 +73,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_divisor"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -91,15 +91,17 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_num_nor"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        tools:ignore="DuplicateSpeakableTextCheck"
+        />
 
     <Button
         android:id="@+id/buttonSiguiente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Siguiente"
         android:text="@string/btn_siguiente" />
 
     <Button
