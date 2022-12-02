@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
             int invertido = 0, resto;
 
-
-
             while( num > 0 ) {
                 resto = (int) (num % 10);
                 invertido = invertido * 10 + resto;
@@ -75,12 +73,6 @@ public class MainActivity extends AppCompatActivity {
             String inv= Float.toString(invertido);
 
             editTextNumInvertido.setText(inv);
-
-
-
-
-
-
 
 
             buttonMostrarResultado.setEnabled(true);
