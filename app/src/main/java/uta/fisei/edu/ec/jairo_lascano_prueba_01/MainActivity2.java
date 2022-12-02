@@ -32,15 +32,40 @@ public class MainActivity2 extends AppCompatActivity {
         editTextDivisor = findViewById(R.id.editTextDivisor);
         editTextNumero = findViewById(R.id.editTextNumero);
 
-    }
 
+
+
+
+}
     public void  Siguiente (View view){
 
-        Intent sigBTN = new Intent (this, MainActivity3.class);
-
-        startActivity(sigBTN);
+        Intent intent = new Intent (this, MainActivity3.class);
+        intent.putExtra("Nombres",editTextNombres.getText());
+        intent.putExtra("Apellidos", editTextApellidos.getText());
+        intent.putExtra("Divideno",editTextDividendo.getText());
+        intent.putExtra("Divosor",editTextDivisor.getText());
+        intent.putExtra("Numero",editTextNumero.getText());
+        startActivity(intent);
 
         finish();
-
     }
+    public void  Cerrar (View view){
+
+        Intent intent = new Intent (this, MainActivity.class);
+        intent.putExtra("Nombres",editTextNombres.getText());
+        intent.putExtra("Apellidos", editTextApellidos.getText());
+        intent.putExtra("Divideno",editTextDividendo.getText());
+        intent.putExtra("Divosor",editTextDivisor.getText());
+        intent.putExtra("Numero",editTextNumero.getText());
+        startActivity(intent);
+
+        finish();
+    }
+
+
+
+
+
 }
+
+
