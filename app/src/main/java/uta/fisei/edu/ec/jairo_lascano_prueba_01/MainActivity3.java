@@ -47,8 +47,6 @@ public class MainActivity3 extends AppCompatActivity {
     public void  Cerrar (View view){
 
         Intent intent = new Intent (this, MainActivity.class);
-        intent.putExtra("Nombres",editTextNombres.getText());
-        intent.putExtra("Apellidos", editTextApellidos.getText());
         intent.putExtra("Divideno",editTextDividendo.getText());
         intent.putExtra("Divosor",editTextDivisor.getText());
         intent.putExtra("Numero",editTextNumero.getText());
