@@ -30,7 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
         editTextApellidos = findViewById(R.id.editTextApellidos);
         editTextDividendo = findViewById(R.id.editTextDividendo);
         editTextDivisor = findViewById(R.id.editTextDivisor);
-        editTextNumero = findViewById(R.id.editTextNumero);
+        editTextNumero = findViewById(R.id.editTextNumeroInv);
 
         Bundle datos = this.getIntent().getExtras();
 

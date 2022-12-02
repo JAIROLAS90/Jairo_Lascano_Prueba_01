@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcel;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         editTextDividendo = findViewById(R.id.editTextDividendo);
         editTextDivisor = findViewById(R.id.editTextDivisor);
         editTextParteEntera = findViewById(R.id.editTextParteEntera);
-        editTextNumInvertido = findViewById(R.id.editTextNumero);
+        editTextNumInvertido = findViewById(R.id.editTextNumeroInv);
         editTextResiduo = findViewById(R.id.editTextResiduo);
 
         Bundle datos = this.getIntent().getExtras();
@@ -76,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
             String inv= Float.toString(invertido);
 
             editTextNumInvertido.setText(inv);
+
+
 
 
 
