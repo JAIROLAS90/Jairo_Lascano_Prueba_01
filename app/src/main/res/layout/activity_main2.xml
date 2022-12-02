@@ -55,7 +55,7 @@
         android:ems="10"
         android:enabled="false"
         android:hint="@string/edit_Dividendo"
-        android:inputType="number"
+
         android:minHeight="48dp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -108,6 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:enabled="false"
+        android:onClick="Cerrar"
         android:text="@string/btnCer" />
 
 </LinearLayout>

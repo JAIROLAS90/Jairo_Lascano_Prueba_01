@@ -34,15 +34,21 @@ public class MainActivity2 extends AppCompatActivity {
 
         Bundle datos = this.getIntent().getExtras();
 
-        if(datos !=null){
-            String Dividendo = datos.getString("Dividendo");
-            String Divisor = datos.getString("Divisor");
-            String Numero = datos.getString("Numero");
-            editTextDividendo.setText(Dividendo);
-            editTextDivisor.setText(Divisor);
-            editTextNumero.setText(Numero);
-        }
 
+
+            if (datos != null){   String nombresCap = datos.getString("Nombres");
+                String Apellidos = datos.getString("Apellidos");
+                editTextNombres.setText(nombresCap);
+                editTextApellidos.setText(Apellidos);
+
+                String Dividendo = datos.getString("Dividendo");
+                String Divisor = datos.getString("Divisor");
+                String Numero = datos.getString("Numero");
+                editTextDividendo.setText(Dividendo);
+                editTextDivisor.setText(Divisor);
+                editTextNumero.setText(Numero);
+                buttoncerrar.setEnabled(true);
+            }
 
 
 }
@@ -52,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
         intent.putExtra("Nombres",editTextNombres.getText().toString());
         intent.putExtra("Apellidos", editTextApellidos.getText().toString());
         intent.putExtra("Divideno",editTextDividendo.getText().toString());
-        intent.putExtra("Divosor",editTextDivisor.getText().toString());
+        intent.putExtra("Divisor",editTextDivisor.getText().toString());
         intent.putExtra("Numero",editTextNumero.getText().toString());
         startActivity(intent);
 
@@ -61,13 +67,11 @@ public class MainActivity2 extends AppCompatActivity {
     public void  Cerrar (View view){
 
         Intent intent = new Intent (this, MainActivity.class);
-        intent.putExtra("Nombres",editTextNombres.getText());
-        intent.putExtra("Apellidos", editTextApellidos.getText());
-        intent.putExtra("Divideno",editTextDividendo.getText());
-        intent.putExtra("Divosor",editTextDivisor.getText());
-        intent.putExtra("Numero",editTextNumero.getText());
-        startActivity(intent);
-
+        intent.putExtra("Nombres",editTextNombres.getText().toString());
+        intent.putExtra("Apellidos", editTextApellidos.getText().toString());
+        intent.putExtra("Divideno",editTextDividendo.getText().toString());
+        intent.putExtra("Divisor",editTextDivisor.getText().toString());
+        intent.putExtra("Numero",editTextNumero.getText().toString());
         finish();
     }
 
