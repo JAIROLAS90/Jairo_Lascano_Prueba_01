@@ -67,11 +67,14 @@ public class MainActivity2 extends AppCompatActivity {
     public void  Cerrar (View view){
 
         Intent intent = new Intent (this, MainActivity.class);
-        intent.putExtra("Nombres",editTextNombres.getText().toString());
-        intent.putExtra("Apellidos", editTextApellidos.getText().toString());
-        intent.putExtra("Divideno",editTextDividendo.getText().toString());
+        intent.putExtra("Dividendo",editTextDividendo.getText().toString());
         intent.putExtra("Divisor",editTextDivisor.getText().toString());
         intent.putExtra("Numero",editTextNumero.getText().toString());
+        intent.putExtra("Nombres",editTextNombres.getText().toString());
+        intent.putExtra("Apellidos", editTextApellidos.getText().toString());
+        startActivity(intent);
+
+
         finish();
     }
 
