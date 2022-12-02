@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             String Numero = datos.getString("Numero");
             editTextDividendo.setText(Dividendo);
             editTextDivisor.setText(Divisor);
-           float dividendo1 = Float.valueOf(Dividendo);
+            float dividendo1 = Float.valueOf(Dividendo);
             float divisor1 = Float.valueOf(Divisor);
 
             float residuo = dividendo1 % divisor1;
@@ -60,6 +60,22 @@ public class MainActivity extends AppCompatActivity {
             DecimalFormat dc = new DecimalFormat("#.0");
             String res = dc.format(div);
             editTextParteEntera.setText(res);
+
+            float num = Integer.valueOf(Numero);
+
+            int invertido = 0, resto;
+
+
+
+            while( num > 0 ) {
+                resto = (int) (num % 10);
+                invertido = invertido * 10 + resto;
+                num /= 10;
+            }
+
+            String inv= Float.toString(invertido);
+
+            editTextNumInvertido.setText(inv);
 
 
 
