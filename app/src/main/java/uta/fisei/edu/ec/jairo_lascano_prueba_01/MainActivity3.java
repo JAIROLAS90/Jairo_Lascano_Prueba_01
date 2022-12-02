@@ -46,10 +46,10 @@ public class MainActivity3 extends AppCompatActivity {
 
     public void  Cerrar (View view){
 
-        Intent intent = new Intent (this, MainActivity.class);
-        intent.putExtra("Divideno",editTextDividendo.getText());
-        intent.putExtra("Divosor",editTextDivisor.getText());
-        intent.putExtra("Numero",editTextNumero.getText());
+        Intent intent = new Intent (this, MainActivity2.class);
+        intent.putExtra("Divideno",editTextDividendo.getText().toString());
+        intent.putExtra("Divosor",editTextDivisor.getText()).toString();
+        intent.putExtra("Numero",editTextNumero.getText()).toString();
         startActivity(intent);
 
 

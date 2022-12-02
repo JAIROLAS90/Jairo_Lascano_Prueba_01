@@ -32,7 +32,16 @@ public class MainActivity2 extends AppCompatActivity {
         editTextDivisor = findViewById(R.id.editTextDivisor);
         editTextNumero = findViewById(R.id.editTextNumero);
 
+        Bundle datos = this.getIntent().getExtras();
 
+        if(datos !=null){
+            String Dividendo = datos.getString("Dividendo");
+            String Divisor = datos.getString("Divisor");
+            String Numero = datos.getString("Numero");
+            editTextDividendo.setText(Dividendo);
+            editTextDivisor.setText(Divisor);
+            editTextNumero.setText(Numero);
+        }
 
 
 
@@ -40,11 +49,11 @@ public class MainActivity2 extends AppCompatActivity {
     public void  Siguiente (View view){
 
         Intent intent = new Intent (this, MainActivity3.class);
-        intent.putExtra("Nombres",editTextNombres.getText());
-        intent.putExtra("Apellidos", editTextApellidos.getText());
-        intent.putExtra("Divideno",editTextDividendo.getText());
-        intent.putExtra("Divosor",editTextDivisor.getText());
-        intent.putExtra("Numero",editTextNumero.getText());
+        intent.putExtra("Nombres",editTextNombres.getText().toString());
+        intent.putExtra("Apellidos", editTextApellidos.getText().toString());
+        intent.putExtra("Divideno",editTextDividendo.getText().toString());
+        intent.putExtra("Divosor",editTextDivisor.getText().toString());
+        intent.putExtra("Numero",editTextNumero.getText().toString());
         startActivity(intent);
 
         finish();
